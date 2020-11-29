@@ -9,7 +9,7 @@ import Foundation
 
 enum CommitEndpoint: Endpoint {
 
-case getRepo
+case getCommit
 
 
 var scheme: String {
@@ -31,7 +31,7 @@ var baseURL: String {
 
 var path: String {
     switch self {
-    case .getRepo:
+    case .getCommit:
         return "/repos/rails/rails/commits"
   
     }
@@ -40,7 +40,7 @@ var path: String {
 var method: String {
     switch self {
         
-    case .getRepo:
+    case .getCommit:
         return "GET"
         
     
@@ -52,7 +52,7 @@ var method: String {
 var body: Data? {
     switch self {
     
-    case .getRepo:
+    case .getCommit:
         return nil
     
     }

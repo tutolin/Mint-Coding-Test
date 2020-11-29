@@ -25,15 +25,46 @@ class CommitViewController: UIViewController {
         commitTableView.tableFooterView = UIView()
 
        
-        commitTableView.register(UINib(nibName: "\(RepoCell.repoID)" , bundle: nil), forCellReuseIdentifier: "\(RepoCell.repoID)" )
+        commitTableView.register(UINib(nibName: "\(CommitCell.cellID)" , bundle: nil), forCellReuseIdentifier: "\(CommitCell.cellID)" )
 
        
+    }
+    
+    func getCommit(){
+        
+        activityIndicator.startAnimating()
+        NetworkEngine.request(endpoint: CommitEndpoint.getCommit) { [weak self] (result: Result<[CommitModel], Error>) in
+            
+            switch result {
+            case.success(let response):
+                self?.activityIndicator.stopAnimating()
+                self?.repoTableView.isHidden = false
+
+                print("Response: ", response)
+                
+                self?.commits = response
+                self?.repoTableView.reloadData()
+                
+               
+                
+            case.failure(let error):
+                DispatchQueue.main.async {
+                    self?.activityIndicator.stopAnimating()
+
+                    self?.repoTableView.isHidden = true
+                    self?.errorView.isHidden = false
+
+                    self?.errorLabel.text = error.localizedDescription
+                }
+            }
+            
+        }
     }
 
 
 }
 
-extension RepoViewController:  UITableViewDelegate, UITableViewDataSource {
+extension CommitViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if commits.count > 25 {
@@ -44,7 +75,7 @@ extension RepoViewController:  UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let commitsCell = tableView.dequeueReusableCell(withIdentifier:  "\(RepoCell.repoID)", for: indexPath) as! RepoCell
+        let commitsCell = tableView.dequeueReusableCell(withIdentifier:  "\(CommitCell.cellID)", for: indexPath) as! CommitCell
         
      
             
