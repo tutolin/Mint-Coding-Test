@@ -61,6 +61,8 @@ class CommitViewController: UIViewController {
     
     @IBAction func retryClicked(_ sender: Any) {
      
+        errorView.isHidden = true
+        getCommit()
         
     }
 
