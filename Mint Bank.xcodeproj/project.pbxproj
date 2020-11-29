@@ -15,6 +15,8 @@
 		E63B20ED2573C91500AD7F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63B20EB2573C91500AD7F65 /* LaunchScreen.storyboard */; };
 		E63B20F82573C91500AD7F65 /* Mint_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B20F72573C91500AD7F65 /* Mint_BankTests.swift */; };
 		E63B21032573C91500AD7F65 /* Mint_BankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B21022573C91500AD7F65 /* Mint_BankUITests.swift */; };
+		E63B21222573CCCD00AD7F65 /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B21202573CCCD00AD7F65 /* CommitCell.swift */; };
+		E63B21232573CCCD00AD7F65 /* CommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63B21212573CCCD00AD7F65 /* CommitCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E63B20FE2573C91500AD7F65 /* Mint BankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mint BankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B21022573C91500AD7F65 /* Mint_BankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mint_BankUITests.swift; sourceTree = "<group>"; };
 		E63B21042573C91500AD7F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63B21202573CCCD00AD7F65 /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
+		E63B21212573CCCD00AD7F65 /* CommitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,9 @@
 		E63B20DF2573C91000AD7F65 /* Mint Bank */ = {
 			isa = PBXGroup;
 			children = (
+				E63B211D2573CC9000AD7F65 /* View Controller */,
 				E63B20E02573C91000AD7F65 /* AppDelegate.swift */,
 				E63B20E22573C91000AD7F65 /* SceneDelegate.swift */,
-				E63B20E42573C91000AD7F65 /* CommitViewController.swift */,
 				E63B20E62573C91000AD7F65 /* Main.storyboard */,
 				E63B20E92573C91500AD7F65 /* Assets.xcassets */,
 				E63B20EB2573C91500AD7F65 /* LaunchScreen.storyboard */,
@@ -126,6 +130,24 @@
 				E63B21042573C91500AD7F65 /* Info.plist */,
 			);
 			path = "Mint BankUITests";
+			sourceTree = "<group>";
+		};
+		E63B211D2573CC9000AD7F65 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E63B211E2573CCA400AD7F65 /* Cell */,
+				E63B20E42573C91000AD7F65 /* CommitViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		E63B211E2573CCA400AD7F65 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E63B21202573CCCD00AD7F65 /* CommitCell.swift */,
+				E63B21212573CCCD00AD7F65 /* CommitCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63B21232573CCCD00AD7F65 /* CommitCell.xib in Resources */,
 				E63B20ED2573C91500AD7F65 /* LaunchScreen.storyboard in Resources */,
 				E63B20EA2573C91500AD7F65 /* Assets.xcassets in Resources */,
 				E63B20E82573C91000AD7F65 /* Main.storyboard in Resources */,
@@ -258,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63B21222573CCCD00AD7F65 /* CommitCell.swift in Sources */,
 				E63B20E52573C91000AD7F65 /* CommitViewController.swift in Sources */,
 				E63B20E12573C91000AD7F65 /* AppDelegate.swift in Sources */,
 				E63B20E32573C91000AD7F65 /* SceneDelegate.swift in Sources */,

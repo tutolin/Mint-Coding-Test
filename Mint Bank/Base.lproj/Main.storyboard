@@ -69,6 +69,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Rails recent commit" id="36C-fe-ZKM"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="FA1-T6-xmC" id="Xzw-D3-GHv"/>
+                        <outlet property="commitTableView" destination="ep9-Nw-bKV" id="5Zf-lp-4zr"/>
+                        <outlet property="errorLabel" destination="2hR-t9-6WB" id="UYK-Al-ThE"/>
+                        <outlet property="errorView" destination="Dv9-4n-Op5" id="wA0-9t-9hF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
