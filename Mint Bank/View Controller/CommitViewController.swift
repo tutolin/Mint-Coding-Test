@@ -38,14 +38,12 @@ class CommitViewController: UIViewController {
             switch result {
             case .success(let response):
              
-                print("Response: ", response)
                 self?.commits = response
                 self?.commitTableView.reloadData()
 
                 
             case .failure(let error):
                 DispatchQueue.main.async {
-                    print("Error: ", error)
                   
                 }
             }

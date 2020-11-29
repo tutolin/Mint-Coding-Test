@@ -67,13 +67,6 @@ class NetworkEngine {
                 else {
                     return
             }
-
-            print("\nResponse: \(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)\n")
-            
-            guard let status = response as? HTTPURLResponse else {
-                return
-            }
-            print(status.statusCode)
             
             
             
@@ -82,7 +75,7 @@ class NetworkEngine {
                     try? JSONDecoder().decode(T.self, from: data) {
                     
                     //7
-                    print("\nResponse: \(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)\n")
+                  
                     
                     completion(.success(responseObject))
                 } else {
