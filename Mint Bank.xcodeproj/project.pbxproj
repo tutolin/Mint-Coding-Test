@@ -20,6 +20,7 @@
 		E63B212C2573CE9400AD7F65 /* CommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B212B2573CE9400AD7F65 /* CommitModel.swift */; };
 		E63B214D2573D17000AD7F65 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B214C2573D16F00AD7F65 /* Extensions.swift */; };
 		E63B21542573D47600AD7F65 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B21532573D47600AD7F65 /* NetworkEngine.swift */; };
+		E63B215C2573DB4400AD7F65 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B215B2573DB4400AD7F65 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E63B212B2573CE9400AD7F65 /* CommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitModel.swift; sourceTree = "<group>"; };
 		E63B214C2573D16F00AD7F65 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E63B21532573D47600AD7F65 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		E63B215B2573DB4400AD7F65 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				E63B214C2573D16F00AD7F65 /* Extensions.swift */,
+				E63B215B2573DB4400AD7F65 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				E63B21222573CCCD00AD7F65 /* CommitCell.swift in Sources */,
 				E63B214D2573D17000AD7F65 /* Extensions.swift in Sources */,
 				E63B21542573D47600AD7F65 /* NetworkEngine.swift in Sources */,
+				E63B215C2573DB4400AD7F65 /* Constant.swift in Sources */,
 				E63B20E52573C91000AD7F65 /* CommitViewController.swift in Sources */,
 				E63B20E12573C91000AD7F65 /* AppDelegate.swift in Sources */,
 				E63B20E32573C91000AD7F65 /* SceneDelegate.swift in Sources */,
