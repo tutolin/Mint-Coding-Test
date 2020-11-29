@@ -14,7 +14,7 @@ class CommitCell: UITableViewCell {
     @IBOutlet weak var dateLbl: UILabel!
 
     
-    static let cellID = "RepoCell"
+    static let cellID = "CommitCell"
     
     
     override func awakeFromNib() {
@@ -28,4 +28,12 @@ class CommitCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setupCell(commit: CommitModel){
+        nameLbl.text = "\(commit.commit?.author?.name ?? "")(\(commit.commit?.author?.email ?? ""))"
+        
+        commitMessageLbl.text = commit.commit?.message
+        
+        dateLbl.text = commit.commit?.author?.date?.convertDateTimeString(fromDateFormattor:  "yyyy-MM-dd HH:mm:ss", toDateFormattor: "h:mm a, MMM d")
+        
+    }
 }

@@ -19,7 +19,7 @@ class CommitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getCommit()
         commitTableView.delegate = self
         commitTableView.dataSource = self
         commitTableView.tableFooterView = UIView()
@@ -39,10 +39,13 @@ class CommitViewController: UIViewController {
             case .success(let response):
              
                 print("Response: ", response)
+                self?.commits = response
+                self?.commitTableView.reloadData()
+
                 
             case .failure(let error):
                 DispatchQueue.main.async {
-                    print("Response: ", error)
+                    print("Error: ", error)
                   
                 }
             }
@@ -64,11 +67,12 @@ extension CommitViewController:  UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let commitsCell = tableView.dequeueReusableCell(withIdentifier:  "\(CommitCell.cellID)", for: indexPath) as! CommitCell
+        let commitCell = tableView.dequeueReusableCell(withIdentifier:  "\(CommitCell.cellID)", for: indexPath) as! CommitCell
         
-     
+        commitCell.setupCell(commit: commits[indexPath.row])
+
             
-            return commitsCell
+            return commitCell
     }
     
     
