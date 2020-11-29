@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E63B20E12573C91000AD7F65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B20E02573C91000AD7F65 /* AppDelegate.swift */; };
 		E63B20E32573C91000AD7F65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B20E22573C91000AD7F65 /* SceneDelegate.swift */; };
-		E63B20E52573C91000AD7F65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B20E42573C91000AD7F65 /* ViewController.swift */; };
+		E63B20E52573C91000AD7F65 /* CommitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B20E42573C91000AD7F65 /* CommitViewController.swift */; };
 		E63B20E82573C91000AD7F65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63B20E62573C91000AD7F65 /* Main.storyboard */; };
 		E63B20EA2573C91500AD7F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63B20E92573C91500AD7F65 /* Assets.xcassets */; };
 		E63B20ED2573C91500AD7F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63B20EB2573C91500AD7F65 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		E63B20DD2573C91000AD7F65 /* Mint Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mint Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B20E02573C91000AD7F65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E63B20E22573C91000AD7F65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E63B20E42573C91000AD7F65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E63B20E42573C91000AD7F65 /* CommitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitViewController.swift; sourceTree = "<group>"; };
 		E63B20E72573C91000AD7F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E63B20E92573C91500AD7F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E63B20EC2573C91500AD7F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				E63B20E02573C91000AD7F65 /* AppDelegate.swift */,
 				E63B20E22573C91000AD7F65 /* SceneDelegate.swift */,
-				E63B20E42573C91000AD7F65 /* ViewController.swift */,
+				E63B20E42573C91000AD7F65 /* CommitViewController.swift */,
 				E63B20E62573C91000AD7F65 /* Main.storyboard */,
 				E63B20E92573C91500AD7F65 /* Assets.xcassets */,
 				E63B20EB2573C91500AD7F65 /* LaunchScreen.storyboard */,
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63B20E52573C91000AD7F65 /* ViewController.swift in Sources */,
+				E63B20E52573C91000AD7F65 /* CommitViewController.swift in Sources */,
 				E63B20E12573C91000AD7F65 /* AppDelegate.swift in Sources */,
 				E63B20E32573C91000AD7F65 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RFYDNQN4JF;
 				INFOPLIST_FILE = "Mint Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RFYDNQN4JF;
 				INFOPLIST_FILE = "Mint Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
