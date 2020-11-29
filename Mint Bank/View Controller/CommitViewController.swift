@@ -36,25 +36,14 @@ class CommitViewController: UIViewController {
         NetworkEngine.request(endpoint: CommitEndpoint.getCommit) { [weak self] (result: Result<[CommitModel], Error>) in
             
             switch result {
-            case.success(let response):
-                self?.activityIndicator.stopAnimating()
-                self?.repoTableView.isHidden = false
-
+            case .success(let response):
+             
                 print("Response: ", response)
                 
-                self?.commits = response
-                self?.repoTableView.reloadData()
-                
-               
-                
-            case.failure(let error):
+            case .failure(let error):
                 DispatchQueue.main.async {
-                    self?.activityIndicator.stopAnimating()
-
-                    self?.repoTableView.isHidden = true
-                    self?.errorView.isHidden = false
-
-                    self?.errorLabel.text = error.localizedDescription
+                    print("Response: ", error)
+                  
                 }
             }
             
