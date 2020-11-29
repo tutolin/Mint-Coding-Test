@@ -25,9 +25,9 @@ class CommitViewController: UIViewController {
         commitTableView.tableFooterView = UIView()
 
        
-        
+        commitTableView.register(UINib(nibName: "\(RepoCell.repoID)" , bundle: nil), forCellReuseIdentifier: "\(RepoCell.repoID)" )
 
-        // Do any additional setup after loading the view.
+       
     }
 
 
@@ -44,7 +44,11 @@ extension RepoViewController:  UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-  
+        let commitsCell = tableView.dequeueReusableCell(withIdentifier:  "\(RepoCell.repoID)", for: indexPath) as! RepoCell
+        
+     
+            
+            return commitsCell
     }
     
     
