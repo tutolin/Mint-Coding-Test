@@ -9,6 +9,14 @@ import UIKit
 
 class CommitCell: UITableViewCell {
 
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var commitMessageLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
+
+    
+    static let cellID = "RepoCell"
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
