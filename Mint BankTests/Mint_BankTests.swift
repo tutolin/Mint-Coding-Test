@@ -2,7 +2,7 @@
 //  Mint_BankTests.swift
 //  Mint BankTests
 //
-//  Created by Fundall on 29/11/2020.
+//  Created by Aboyeji Tolulope on 29/11/2020.
 //
 
 import XCTest
