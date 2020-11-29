@@ -19,6 +19,7 @@
 		E63B21232573CCCD00AD7F65 /* CommitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63B21212573CCCD00AD7F65 /* CommitCell.xib */; };
 		E63B212C2573CE9400AD7F65 /* CommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B212B2573CE9400AD7F65 /* CommitModel.swift */; };
 		E63B214D2573D17000AD7F65 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B214C2573D16F00AD7F65 /* Extensions.swift */; };
+		E63B21542573D47600AD7F65 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63B21532573D47600AD7F65 /* NetworkEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E63B21212573CCCD00AD7F65 /* CommitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitCell.xib; sourceTree = "<group>"; };
 		E63B212B2573CE9400AD7F65 /* CommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitModel.swift; sourceTree = "<group>"; };
 		E63B214C2573D16F00AD7F65 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E63B21532573D47600AD7F65 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,8 @@
 		E63B20DF2573C91000AD7F65 /* Mint Bank */ = {
 			isa = PBXGroup;
 			children = (
+				E63B21512573D44300AD7F65 /* Network Services */,
+				E63B21302573D0C500AD7F65 /* Utility */,
 				E63B211D2573CC9000AD7F65 /* View Controller */,
 				E63B20E02573C91000AD7F65 /* AppDelegate.swift */,
 				E63B20E22573C91000AD7F65 /* SceneDelegate.swift */,
@@ -139,7 +143,6 @@
 		E63B211D2573CC9000AD7F65 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E63B21302573D0C500AD7F65 /* Utility */,
 				E63B212A2573CE7200AD7F65 /* Commit Model */,
 				E63B211E2573CCA400AD7F65 /* Cell */,
 				E63B20E42573C91000AD7F65 /* CommitViewController.swift */,
@@ -170,6 +173,14 @@
 				E63B214C2573D16F00AD7F65 /* Extensions.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		E63B21512573D44300AD7F65 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				E63B21532573D47600AD7F65 /* NetworkEngine.swift */,
+			);
+			path = "Network Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 			files = (
 				E63B21222573CCCD00AD7F65 /* CommitCell.swift in Sources */,
 				E63B214D2573D17000AD7F65 /* Extensions.swift in Sources */,
+				E63B21542573D47600AD7F65 /* NetworkEngine.swift in Sources */,
 				E63B20E52573C91000AD7F65 /* CommitViewController.swift in Sources */,
 				E63B20E12573C91000AD7F65 /* AppDelegate.swift in Sources */,
 				E63B20E32573C91000AD7F65 /* SceneDelegate.swift in Sources */,
