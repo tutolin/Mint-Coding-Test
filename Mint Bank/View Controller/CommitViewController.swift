@@ -37,6 +37,9 @@ class CommitViewController: UIViewController {
             
             switch result {
             case .success(let response):
+                
+                self?.activityIndicator.stopAnimating()
+                self?.commitTableView.isHidden = false
              
                 self?.commits = response
                 self?.commitTableView.reloadData()
@@ -44,7 +47,12 @@ class CommitViewController: UIViewController {
                 
             case .failure(let error):
                 DispatchQueue.main.async {
-                  
+                    self?.activityIndicator.stopAnimating()
+
+                    self?.commitTableView.isHidden = true
+                    self?.errorView.isHidden = false
+
+                    self?.errorLabel.text = error.localizedDescription
                 }
             }
             
@@ -52,8 +60,7 @@ class CommitViewController: UIViewController {
     }
     
     @IBAction func retryClicked(_ sender: Any) {
-        errorView.isHidden = true
-        getCommit()
+     
         
     }
 
